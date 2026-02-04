@@ -1,0 +1,546 @@
+<!--
+=====================================
+ Project: lystuw25-tet4-phia-sau-nhung-du-day
+ Created By: BaoTQ
+ Last Modified: 04/02/2026
+=====================================
+-->
+
+<!DOCTYPE html>
+<html lang="vi" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TẾT 4.0 - PHÍA SAU NHỮNG ĐỦ ĐẦY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="h-full">
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen active">
+        <div class="splash-content">
+            <div class="lantern-container">
+                <div class="lantern left"></div>
+                <div class="lantern right"></div>
+            </div>
+            
+            <div class="title-container">
+                <h1 class="main-title">TẾT 4.0</h1>
+                <div class="subtitle-wrapper">
+                    <p class="subtitle">PHÍA SAU NHỮNG ĐỦ ĐẦY</p>
+                </div>
+                <div class="project-info">
+                    <p class="course-code">MLN111 - MKT1831_DIG</p>
+                    <p class="group-info">Nhóm 5</p>
+                    <p class="members">Trần Quốc Bảo • Đoàn Thế Anh • Đỗ Nguyễn Đan Lê<br/>Trịnh Khánh Chi • Đồng Khánh Linh</p>
+                </div>
+            </div>
+            
+            <button class="enter-button" id="enterBtn">
+                <span class="button-text">Bước vào Tết</span>
+                <span class="button-icon">🏮</span>
+            </button>
+            
+            <div class="falling-petals">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <div class="side-nav-content">
+            <div class="side-nav-header">
+                <span class="nav-icon">🏮</span>
+                <span class="nav-title">Mục lục</span>
+            </div>
+            <ul class="side-nav-list">
+                <li><a href="#hero" class="side-nav-link active" data-section="hero">Trang chủ</a></li>
+                <li><a href="#learning-objectives" class="side-nav-link" data-section="learning-objectives">Mục tiêu & Cơ sở</a></li>
+                <li><a href="#research-problem" class="side-nav-link" data-section="research-problem">Vấn đề nghiên cứu</a></li>
+                <li><a href="#firework-section" class="side-nav-link" data-section="firework-section">Đốt pháo</a></li>
+                <li><a href="#analysis" class="side-nav-link" data-section="analysis">Nội dung phân tích</a></li>
+                <li><a href="#stories" class="side-nav-link" data-section="stories">Những câu chuyện</a></li>
+                <li><a href="#conclusion" class="side-nav-link" data-section="conclusion">Kết luận</a></li>
+                <li><a href="#thanks" class="side-nav-link" data-section="thanks">Cảm ơn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent" class="main-content">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-content">
+                <div class="logo">TẾT 4.0</div>
+                <div class="nav-links">
+                    <button class="nav-btn" id="shareBtn">
+                        <span class="icon">📤</span>
+                        <span class="text">Chia sẻ</span>
+                    </button>
+                    <button class="nav-btn" id="favoriteBtn">
+                        <span class="icon">⭐</span>
+                        <span class="text">Yêu thích</span>
+                    </button>
+                    <button class="nav-btn" id="qrBtn">
+                        <span class="icon">📱</span>
+                        <span class="text">QR Code</span>
+                    </button>
+                    <button class="nav-btn" id="githubBtn">
+                        <span class="icon">💻</span>
+                        <span class="text">GitHub</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="decorative-clouds">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="cloud cloud-3"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h2 class="hero-title">Khám phá ý nghĩa Tết trong thời đại số</h2>
+                <p class="hero-description">
+                    Khi vật chất ngày càng dồi dào nhưng tinh thần Tết dường như phai nhạt,<br/>
+                    chúng ta cùng tìm hiểu nguyên nhân qua lăng kính triết học Mác - Lênin
+                </p>
+            </div>
+            
+            <div class="decorative-elements">
+                <div class="plum-blossom plum-1">🌸</div>
+                <div class="plum-blossom plum-2">🌸</div>
+                <div class="plum-blossom plum-3">🌸</div>
+                <div class="lucky-coin coin-1">🪙</div>
+                <div class="lucky-coin coin-2">🪙</div>
+            </div>
+        </section>
+
+        <!-- Learning Objectives & Theory Combined Section -->
+        <section class="content-section combined-section" id="learning-objectives">
+            <div class="section-container">
+                <div class="combined-grid">
+                    <!-- Left: Learning Objectives -->
+                    <div class="combined-left">
+                        <div class="section-header">
+                            <h3 class="section-title">Mục Tiêu Học Tập</h3>
+                            <div class="title-decoration"></div>
+                        </div>
+                        <div class="content-card">
+                            <div class="card-icon">🎯</div>
+                            <p class="card-text">
+                                Vận dụng cặp phạm trù <strong>Vật chất – Ý thức</strong> trong Triết học Mác – Lênin 
+                                để phân tích sự biến đổi trong nhận thức và trải nghiệm văn hóa Tết của con người Việt Nam 
+                                trong bối cảnh xã hội hiện đại và thời đại số.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Theory Basis (Content Card Style) -->
+                    <div class="combined-right">
+                        <div class="section-header">
+                            <h3 class="section-title">Cơ Sở Lý Luận</h3>
+                            <div class="title-decoration"></div>
+                        </div>
+
+                        <div class="content-card">
+                            <div class="card-icon">📚</div>
+                            <div class="theory-box">
+                                <p class="card-text">
+                                    <strong>1.</strong> Vật chất quyết định ý thức
+                                </p>
+                                <p class="card-text">
+                                    <strong>2.</strong> Ý thức là sự phản ánh hiện thực khách quan vào bộ não con người
+                                </p>
+                                <p class="card-text">
+                                    <strong>3.</strong> Ý thức có tính độc lập tương đối và có thể tác động ngược lại vật chất
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Problem Section -->
+        <section class="content-section alt" id="research-problem">
+            <div class="section-container">
+                <div class="section-header">
+                    <h3 class="section-title">Vấn Đề Nghiên Cứu</h3>
+                    <div class="title-decoration"></div>
+                </div>
+                <div class="content-card highlight">
+                    <div class="card-icon">❓</div>
+                    <p class="card-text">
+                        Trong khi điều kiện vật chất ngày càng đầy đủ, nhiều người lại cảm nhận rằng 
+                        <em>"Tết ngày nay không còn như xưa"</em>. Chúng tôi đặt ra câu hỏi:
+                    </p>
+                    <blockquote class="research-question">
+                        Sự phát triển về kinh tế, công nghệ và nhịp sống hiện đại đã tác động 
+                        như thế nào đến ý thức và cảm nhận về Tết của con người?
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Firework Interactive Section -->
+        <section class="content-section firework-section" id="firework-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h3 class="section-title">Đốt Pháo Khai Mào</h3>
+                    <div class="title-decoration"></div>
+                </div>
+                <div class="firework-wrapper">
+                    <p class="firework-intro">Hãy đốt pháo để bắt đầu hành trình khám phá!</p>
+                    <div class="firework-container" id="fireworkContainer">
+                        <div class="firework-base">
+                            <div class="firework-stick"></div>
+                            <div class="firework-fuse" id="fuse"></div>
+                            <div class="firework-body" id="fireworkBody">
+                                <div class="firework-pattern"></div>
+                            </div>
+                        </div>
+                        <button class="light-button" id="lightBtn">
+                            <span class="flame">🔥</span>
+                            <span class="text">Đốt pháo</span>
+                        </button>
+                    </div>
+                    <div class="firework-explosion" id="fireworkExplosion">
+                        <div class="explosion-particles"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section class="content-section" id="analysis">
+            <div class="section-container">
+                <div class="section-header">
+                    <h3 class="section-title">Nội Dung Phân Tích</h3>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="analysis-section">
+                    <div class="analysis-item">
+                        <div class="analysis-header">
+                            <span class="analysis-icon">💰</span>
+                            <h4 class="analysis-title">Kinh tế phát triển – Tết không còn là sự chờ đợi</h4>
+                        </div>
+                        <p class="analysis-text">
+                            Trong xã hội truyền thống, sự thiếu thốn vật chất khiến Tết trở thành thời điểm đặc biệt, 
+                            gắn với mong đợi "ăn ngon, mặc đẹp". Khi đời sống được cải thiện, các nhu cầu này được đáp ứng 
+                            quanh năm, làm giảm tính "thiêng liêng" của Tết trong ý thức con người.
+                        </p>
+                        <div class="analysis-conclusion">
+                            → Vật chất thay đổi dẫn đến sự bão hòa trong cảm nhận về giá trị tinh thần của Tết.
+                        </div>
+                    </div>
+
+                    <div class="analysis-item">
+                        <div class="analysis-header">
+                            <span class="analysis-icon">📱</span>
+                            <h4 class="analysis-title">Công nghệ phát triển – Kết nối nhưng xa cách</h4>
+                        </div>
+                        <p class="analysis-text">
+                            Công nghệ số giúp con người liên lạc, mua sắm và chia sẻ nhanh chóng. Tuy nhiên, 
+                            sự thay thế của tương tác trực tiếp bằng tương tác qua màn hình làm suy giảm 
+                            trải nghiệm cảm xúc và sự gắn kết thực.
+                        </p>
+                        <div class="analysis-conclusion">
+                            → Sự tiện lợi vật chất có thể làm "ảo hóa" ý thức về sum vầy và đoàn tụ.
+                        </div>
+                    </div>
+
+                    <div class="analysis-item">
+                        <div class="analysis-header">
+                            <span class="analysis-icon">⏰</span>
+                            <h4 class="analysis-title">Nhịp sống hiện đại – Tết trở thành áp lực</h4>
+                        </div>
+                        <p class="analysis-text">
+                            Áp lực công việc, tài chính và hình ảnh trên mạng xã hội khiến Tết không còn là thời gian nghỉ ngơi, 
+                            mà trở thành một "deadline" phải hoàn hảo. Người lớn tuổi có thể cảm thấy bị bỏ lại phía sau 
+                            trong môi trường công nghệ mới.
+                        </p>
+                        <div class="analysis-conclusion">
+                            → Những điều kiện vật chất mới tạo ra căng thẳng trong đời sống tinh thần.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section class="content-section alt" id="stories">
+            <div class="section-container">
+                <div class="section-header">
+                    <h3 class="section-title">Những Câu Chuyện</h3>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="stories-grid">
+                    <!-- Story 1 -->
+                    <div class="story-card" data-story="1">
+                        <div class="story-image-wrapper">
+                            <img src="assets/images/story1.png" alt="Câu chuyện về Mẹ" class="story-image">
+                            <div class="story-overlay">
+                                <span class="story-number">01</span>
+                            </div>
+                        </div>
+                        <h4 class="story-title">Câu chuyện về Mẹ</h4>
+                        <p class="story-preview">Ảnh bà mẹ đứng giữa siêu thị hiện đại, tay cầm giỏ hàng đầy ắp nhưng mắt nhìn xa xăm...</p>
+                        <button class="story-btn" data-story="1">
+                            <span>Đọc câu chuyện</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Story 2 -->
+                    <div class="story-card" data-story="2">
+                        <div class="story-image-wrapper">
+                            <img src="assets/images/story2.png" alt="Câu chuyện về Anh lính" class="story-image">
+                            <div class="story-overlay">
+                                <span class="story-number">02</span>
+                            </div>
+                        </div>
+                        <h4 class="story-title">Câu chuyện về Anh lính</h4>
+                        <p class="story-preview">Ảnh anh lính gác biên thùy, smartphone đặt trên bệ đá hiện cuộc gọi Video call với mẹ...</p>
+                        <button class="story-btn" data-story="2">
+                            <span>Đọc câu chuyện</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="story-card" data-story="3">
+                        <div class="story-image-wrapper">
+                            <img src="assets/images/story3.png" alt="Câu chuyện về Ông nội" class="story-image">
+                            <div class="story-overlay">
+                                <span class="story-number">03</span>
+                            </div>
+                        </div>
+                        <h4 class="story-title">Câu chuyện về Ông nội</h4>
+                        <p class="story-preview">Ảnh ông nội loay hoay trước cái Smartphone để nhận lì xì online của cháu, gương mặt bất lực...</p>
+                        <button class="story-btn" data-story="3">
+                            <span>Đọc câu chuyện</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="content-section conclusion-section" id="conclusion">
+            <div class="section-container">
+                <div class="section-header">
+                    <h3 class="section-title">Kết Luận & Thông Điệp</h3>
+                    <div class="title-decoration"></div>
+                </div>
+                <div class="conclusion-card">
+                    <div class="conclusion-icon">💫</div>
+                    <p class="conclusion-text">
+                        Sự phát triển của vật chất là tất yếu trong xã hội hiện đại. Tuy nhiên, 
+                        con người với tư cách là chủ thể có thể chủ động điều chỉnh ý thức để công nghệ 
+                        và tiện nghi phục vụ cho tình cảm, thay vì thay thế nó.
+                    </p>
+                    <div class="message-box">
+                        <div class="message-decoration">✦</div>
+                        <p class="main-message">
+                            "Vật chất làm Tết đủ đầy,<br/>
+                            nhưng chỉ tình cảm mới giữ được hương vị."
+                        </p>
+                        <div class="message-decoration">✦</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thanks Section -->
+        <section class="content-section thanks-section" id="thanks">
+            <div class="section-container">
+                <div class="thanks-content">
+                    <h2 class="thanks-title">Cảm ơn bạn đã theo dõi!</h2>
+                    <p class="thanks-text">
+                        Hy vọng sản phẩm của chúng tôi đã mang đến<br/>
+                        những góc nhìn mới về Tết trong thời đại 4.0
+                    </p>
+                    <button class="firework-celebrate-btn" id="celebrateBtn">
+                        <span class="btn-icon">🎆</span>
+                        <span class="btn-text">Bắn pháo hoa ăn mừng!</span>
+                    </button>
+                    <div class="celebration-fireworks" id="celebrationFireworks"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🏮</span>
+                    <span class="logo-text">TẾT 4.0</span>
+                </div>
+                <p class="footer-text">
+                    <strong>Một sản phẩm được thực hiện với tâm huyết   </strong><br/>
+                    Thiết kế/Phát triển bởi: Trần Quốc Bảo (lystuw25)<br>
+                    Liên hệ: baotqwork20@gmail.com<br>
+                    Theo dõi tại: https://github.com/lystuw25<br>
+                </p>
+                <div class="footer-divider"></div>
+                <p class="copyright">© 2026 • Chúc mừng năm mới</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <span>✕</span>
+            </button>
+            <div class="video-container">
+                <video id="mainVideo" controls>
+                    <source src="assets/videos/tet4-phia-sau-nhung-du-day-clip.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video HTML5.
+                </video>
+            </div>
+            <div class="video-ending" id="videoEnding">
+                <div class="ending-content">
+                    <h2 class="ending-title">Cảm ơn bạn đã theo dõi!</h2>
+                    <p class="ending-text">
+                        Hy vọng sản phẩm của chúng tôi đã mang đến<br/>
+                        những góc nhìn mới về Tết trong thời đại 4.0
+                    </p>
+                    <div class="ending-decoration">
+                        <span class="decoration-item">🏮</span>
+                        <span class="decoration-item">🧧</span>
+                        <span class="decoration-item">🏮</span>
+                    </div>
+                    <button class="ending-button" id="closeEndingBtn">
+                        Quay lại trang chủ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story Modal -->
+    <div class="story-modal" id="storyModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content story-modal-content">
+            <button class="modal-close" id="closeStoryModal">
+                <span>✕</span>
+            </button>
+            <div class="story-modal-inner">
+                <div class="story-modal-image">
+                    <img id="storyModalImage" src="" alt="Story Image">
+                </div>
+                <div class="story-modal-text">
+                    <h3 id="storyModalTitle" class="story-modal-title"></h3>
+                    <div id="storyModalContent" class="story-modal-content-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Modal -->
+    <div class="info-modal" id="qrModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content small">
+            <button class="modal-close" id="closeQR">
+                <span>✕</span>
+            </button>
+            <div class="info-content">
+                <h3 class="info-title">Quét mã QR</h3>
+                <div class="qr-placeholder">
+                    <img src="assets/images/qr.jpg" alt="QR Code" id="qrImage" class="qr-image">
+                    <p class="qr-text">Quét để xem video trên điện thoại</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GitHub Modal -->
+    <div class="info-modal" id="githubModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content small">
+            <button class="modal-close" id="closeGithub">
+                <span>✕</span>
+            </button>
+            <div class="info-content">
+                <h3 class="info-title">GitHub Repository</h3>
+                <div class="github-content">
+                    <div class="github-icon">💻</div>
+                    <p class="github-description">
+                        Hãy xem và vote sao ⭐ cho dự án nhé!!!
+                    </p>
+                    <div class="github-link-box">
+                        <input type="text" class="github-link-input" id="githubLink" value="https://github.com/lystuw25" readonly>
+                        <button class="copy-button" id="copyGithubBtn">
+                            <span class="copy-icon">📋</span>
+                            <span class="copy-text">Copy</span>
+                        </button>
+                    </div>
+                    <a href="https://github.com/lystuw25" target="_blank" class="visit-github-btn">
+                        Truy cập GitHub →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="info-modal" id="shareModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content small">
+            <button class="modal-close" id="closeShare">
+                <span>✕</span>
+            </button>
+            <div class="info-content">
+                <h3 class="info-title">Chia sẻ dự án</h3>
+                <div class="share-content">
+                    <div class="share-icon">📤</div>
+                    <p class="share-description">
+                        Chia sẻ dự án này với bạn bè của bạn!
+                    </p>
+                    <div class="share-buttons">
+                        <button class="share-btn facebook" id="shareFacebook">
+                            <span>📘</span> Facebook
+                        </button>
+                        <button class="share-btn twitter" id="shareTwitter">
+                            <span>🐦</span> Twitter
+                        </button>
+                        <button class="share-btn linkedin" id="shareLinkedin">
+                            <span>💼</span> LinkedIn
+                        </button>
+                        <button class="share-btn copy-link" id="shareCopyLink">
+                            <span>🔗</span> Copy Link
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+<!--
+=====================================
+ Project: lystuw25-tet4-phia-sau-nhung-du-day
+ Created By: BaoTQ
+ Last Modified: 04/02/2026
+=====================================
+-->
